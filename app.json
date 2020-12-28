@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "experiments": {
+      "turboModules": true
+    },
+    "name": "airbnb-expo",
+    "description": "",
+    "slug": "airbnb-expo"
+  }
+}
