@@ -24,20 +24,16 @@ const AppRoutes: React.FC = () => (
     <Navigator
       sceneContainerStyle={{ backgroundColor: '#15161E' }}
       tabBarOptions={{
-        // showLabel: false,
         activeTintColor: '#f15454',
         style: {
           backgroundColor: '#15161E',
-          // backgroundColor: 'transparent',
-          borderTopLeftRadius: 16,
-          borderTopRightRadius: 16,
         },
       }}
     >
       <Screen
         name="Explore"
         component={ExploreRoutes}
-        // component={P.SearchResultsMap}
+        // component={P.SearchResultsMapFlat}
         options={{
           tabBarIcon: ({ color }) => (
             <Fontisto name="search" size={24} color={color} />

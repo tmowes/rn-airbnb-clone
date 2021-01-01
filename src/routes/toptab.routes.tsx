@@ -19,7 +19,7 @@ const TopTabRoutes: React.FC = () => (
     }}
   >
     <Screen name="List" component={P.SearchResults} />
-    <Screen name="Map" component={P.SearchResultsMap} />
+    <Screen name="Map" component={P.SearchResultsMapFlat} />
   </Navigator>
 )
 

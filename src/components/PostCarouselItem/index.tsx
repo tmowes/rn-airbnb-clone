@@ -2,11 +2,15 @@ import React from 'react'
 import { PostCarouselItemProps } from './types'
 
 import * as S from './styles'
+import { Dimensions } from 'react-native'
+const { width: sWidth } = Dimensions.get('screen')
+export const cardWidth = sWidth - 32
 
 const PostCarouselItem = ({ post }: PostCarouselItemProps) => {
   const { image, type, title, bed, bedroom, newPrice } = post
+
   return (
-    <S.Container>
+    <S.Container style={{ width: cardWidth }}>
       <S.Left>
         <S.Img source={{ uri: image }} />
       </S.Left>

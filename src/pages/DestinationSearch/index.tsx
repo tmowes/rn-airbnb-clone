@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import * as S from './styles'
 import SearchItemRow from './SearchItemRow'
 import { StatusBar } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
+import { GOOGLE_PLACE_KEY } from '../../secrets/googleplace'
 
 const DestinationSearch: React.FC = () => {
   const { navigate } = useNavigation()
@@ -20,7 +21,7 @@ const DestinationSearch: React.FC = () => {
           }}
           fetchDetails
           query={{
-            key: process.env.GOOGLE_PLACE_KEY,
+            key: GOOGLE_PLACE_KEY,
             language: 'en',
             types: '(cities)',
           }}

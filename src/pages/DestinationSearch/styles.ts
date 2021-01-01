@@ -2,7 +2,7 @@ import styled from 'styled-components/native'
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
 
 export const Container = styled.View`
-  margin: 16px 16px;
+  padding: 16px 16px;
 `
 
 export const Content = styled.View`
@@ -12,7 +12,7 @@ export const Content = styled.View`
 
 export const Input = styled(GooglePlacesAutocomplete).attrs({
   placeholder: 'Where are you going?',
-  placeholderTextColor: 'whitesmoke',
+  placeholderTextColor: 'white',
   styles: {
     textInput: {
       color: 'whitesmoke',

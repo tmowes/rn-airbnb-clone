@@ -1,11 +1,7 @@
-import { Dimensions } from 'react-native'
 import styled from 'styled-components/native'
-
-const { width } = Dimensions.get('screen')
 
 export const Container = styled.View`
   flex-direction: row;
-  width: ${width - 64}px;
   overflow: hidden;
   align-items: center;
   background-color: #5b5b5b60;

@@ -10,7 +10,7 @@ const ExploreRoutes: React.FC = () => (
   <Navigator
     screenOptions={{
       headerShown: false,
-      cardStyle: { backgroundColor: 'transparent' },
+      cardStyle: { backgroundColor: '#15161E' },
     }}
   >
     <Screen name="Home" component={P.Home} />
